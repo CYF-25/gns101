@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CBT System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Home Page -->
+    <section id="home-page" class="page">
+        <h1> CYF LMS (CBT) </h1>
+        <h2>GNS 101</h2>
+        <form id="login-form">
+            <label>Matric No:</label>
+            <input type="text" id="matric-no" required>
+            
+            <label>Password:</label>
+            <input type="password" id="password" required>
+            
+            <button type="submit">Proceed</button>
+        </form>
+
+        <footer style="background: #ddd; color: black; text-align: center; padding: 10px; position: fixed; bottom: 0; width: 100%;">
+            <div class="footer-container">
+               <p>&copy; 2025 CBT System | All Rights Reserved </p>
+               
+               <p>Powered by <strong>Chapel Youth Fellowship</strong></p>
+           </div>
+       </footer>
+    </section>
+    
+
+    <!-- Instructions Page -->
+    <section id="instructions-page" class="page hidden">
+        <h2>Instructions</h2>
+        <p><strong>Matric No:</strong> <span id="user-matric"></span></p>
+        <p><strong>Course:</strong> GNS 101</p>
+        <p><strong>Duration:</strong> 10 minutes</p>
+        <p>This is a Computer-Based Test for GNS 101. The duration is 10 minutes to answer 30 questions.</p>
+        <button id="start-test">Start</button>
+    </section>
+
+    <!-- Test Page -->
+    <section id="test-page" class="page hidden">
+        <div class="test-header">
+            <h2>GNS 101</h2>
+            <button id="submit-test" class="submit-btn">Submit</button>
+        </div>
+        <div class="student-details">
+            <p><strong>Name:</strong> John Doe</p>
+            <p><strong>Matric No:</strong> <span id="user-matric-test"></span></p>
+            <p><strong>Course:</strong> GNS 101</p>
+        </div>
+
+        <div class="question-container">
+            <p><strong>Question:</strong> <span id="question-text">1</span></p>
+            <div id="options"></div>
+        </div>
+
+        <div class="question-navigation">
+            <h3>Questions</h3>
+            <div id="question-icons"></div>
+        </div>
+
+        <div class="navigation">
+            <button id="prev" class="prev-btn">Previous</button>
+            <button id="save" class="save-btn">Save</button>
+            <button id="next" class="next-btn">Next</button>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+
+
+</html>
