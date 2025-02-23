@@ -1,0 +1,136 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f4f4f4;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: white;
+    width: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Forms */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+input, button {
+    margin: 10px 0;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Buttons */
+.prev-btn {
+    background: #d9534f;
+    color: white;
+}
+
+.save-btn {
+    background: #007BFF;
+    color: white;
+}
+
+.next-btn {
+    background: #28a745;
+    color: white;
+}
+
+.submit-btn {
+    background: #ff9800;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* Test Page */
+.test-header {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.student-details {
+    background: #e3f2fd;
+    padding: 10px;
+    width: 80%;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.question-container {
+    background: white;
+    padding: 20px;
+    width: 80%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Question Navigation */
+.question-navigation {
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+#question-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+}
+
+.question-btn {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: #ddd;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.question-btn.active {
+    background: #4CAF50;
+    color: white;
+}
+
+.question-btn:hover {
+    background: #007BFF;
+    color: white;
+}
+
+/* Navigation */
+.navigation {
+    display: flex;
+    gap: 10px;
+}
+
